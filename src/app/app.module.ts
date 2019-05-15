@@ -4,13 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; // Paquete Bootstrap
+import {NgbdModalBasic} from './modal-example'; // Implementacion de Modal Popup
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NgbdModalBasic
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot() // Implementacion de Modal Popup
   ],
   providers: [],
   bootstrap: [AppComponent]
